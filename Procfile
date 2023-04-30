@@ -1,1 +1,1 @@
-web: python manage.py collectstatic && gunicorn elreydeltermo.wsgi
+web: gunicorn elreydeltermo.wsgi --log-file -
