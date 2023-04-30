@@ -1,1 +1,1 @@
-web: gunicorn elreydeltermo.wsgi --log-file -
+web: gunicorn elreydeltermo.wsgi
