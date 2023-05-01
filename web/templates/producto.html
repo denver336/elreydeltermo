@@ -14,10 +14,7 @@
               {% if producto.imagen %}
               <img src="{{producto.imagen.url}}" alt="{{producto.nombre}}" />
               {% else %}
-              <img
-                src="https://via.placeholder.com/250"
-                alt="{{producto.nombre}}"
-              />
+              <img src="https://via.placeholder.com/250" alt="{{producto.nombre}}" />
               {% endif %}
             </a>
           </li>
@@ -27,9 +24,7 @@
 
     <div class="prod-cont">
       <p class="prod-categs">
-        <a href="{% url 'web:productosPorCategoria' producto.categoria_id %}"
-          >{{producto.categoria}}</a
-        >
+        <a href="{% url 'web:productosPorCategoria' producto.categoria_id %}">{{producto.categoria}}</a>
       </p>
       <h1>{{producto.nombre}}</h1>
       <div class="variations_form cart">
@@ -38,13 +33,9 @@
         <div class="prod-add">
           <form>
             {% csrf_token %}
-            <a
-              style="background-color: #16be45"
-              class="button"
-              href="https://wa.me/541150229129?text=Hola,%20Me%20gustaría%20comprar%20el%20producto%20{{producto.nombre}}"
-              class="whatsapp"
-              target="_blank"
-            >
+            <a style="background-color: #16be45" class="button"
+              href="https://wa.me/541139568010?text=Hola,%20Me%20gustaría%20comprar%20el%20producto%20{{producto.nombre}}"
+              class="whatsapp" target="_blank">
               <i class="icon fa fa-whatsapp"></i>Comprar producto
             </a>
           </form>
